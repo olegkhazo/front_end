@@ -17,8 +17,7 @@ function checkData(first, second, action) {
     return alert("unknown operation"); 
   } 
    
-  let res = computation(first, second, action); 
-  alert(res) 
+  computation(first, second, action);  
 } 
  
 // Вычисление

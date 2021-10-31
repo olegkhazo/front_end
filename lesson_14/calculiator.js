@@ -2,7 +2,7 @@
 function getData() { 
   let first = +prompt("First Number", ""); 
   let second = +prompt("Second Number", ""); 
-  let action = prompt("Action:\n One of this - sum, minus, multi, divide", "").toLocaleLowerCase(); 
+  let action = prompt("Action:\n One of this - sum, minus, multi, divide", ""); 
 
   checkData(first, second, action); 
 } 
@@ -23,7 +23,7 @@ alert(res)
 
 // Вычисление
 function computation(first, second, action) { 
-switch(action){ 
+switch(action.toLocaleLowerCase()){ 
   case "sum": return first + second; 
   case "minus": return first - second; 
   case "multi": return first * second; 

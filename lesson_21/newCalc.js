@@ -1,4 +1,4 @@
- calc = {
+const calc = {
     availableActions: ["minus", "sum", "multi", "divide"],
     result: '',
 
@@ -12,7 +12,6 @@
         }
 
         this.result = this.computation(action, firstNumber, secondNumber);
-        // console.log(this.result);
     },
 
     computation(action, firstNumber, secondNumber) {

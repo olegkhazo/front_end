@@ -4,7 +4,7 @@ const calc = {
 
     startOperation(action, firstNumber, secondNumber) {
         if (!action || isNaN(firstNumber) || isNaN(secondNumber)) {
-            return console.log("You must input operation");
+            return console.log("You must input operands");
         }
 
         if (!this.availableActions.includes(action)) {

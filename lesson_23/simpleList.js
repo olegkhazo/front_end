@@ -2,11 +2,14 @@ const list = {
     "create a task": "In Progress",
     "make a bed": "Done",
     "write a post": "To Do",
-
+    statuses: ["In Progress", "Done", "To Do"],
+    
 
     changeStatus( task, status ) {
-        if ( [task] in list ) {
+        if ( [task] in list && this.statuses.includes(status)) {
             list[task] = status;
+        } else {
+            console.log("Check your data please! Something go wrong.")
         }
     },
 
@@ -27,12 +30,13 @@ const list = {
     },
 
     showList() {
-        const statuses = ["In Progress", "Done", "To Do"];
-        for ( let i = 0; i <= statuses.length; i++ ) {
-            console.log(statuses[i]);
+        for ( let i = 0; i < this.statuses.length; i++ ) {
+
+            console.log(this.statuses[i] + ":");
+
             for ( let key in list ) {
-                if ( list[key] == statuses[i] ) {
-                    console.log(key);
+                if ( list[key] == this.statuses[i] ) {
+                    console.log(" " + '"' + key + '"');
                 }
             }
         }

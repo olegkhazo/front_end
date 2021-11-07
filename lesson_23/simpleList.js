@@ -40,6 +40,7 @@ const list = {
                 }
             }
         }
+        return "All your tasks for " + new Date().getMonth() + "." + new Date().getDate()  + "." + new Date().getFullYear();
     },
 
 };

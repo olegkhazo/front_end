@@ -5,4 +5,4 @@ function showVerticalMessage(str) {
         console.log(str[i]);
     }
 }
-showVerticalMessage('');
+showVerticalMessage('rf');

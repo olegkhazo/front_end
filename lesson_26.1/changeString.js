@@ -1,8 +1,20 @@
 function showVerticalMessage(str) {
-    if ( !str ) return;
-    str = str[0].toUpperCase() + str.slice(1, 10);
-    for ( let i = 0; i < str.length; i++ ) {
-        console.log(str[i]);
+    let finalString = "";
+
+    const FIRST_LETTER = "м";
+    const MAX_LENGTH = 10;
+
+    if (str[0] === FIRST_LETTER) {
+        finalString = str[0].toUpperCase() + str.slice(1);
     }
-}
-showVerticalMessage('rf');
+
+    if (str.length > MAX_LENGTH) {
+        finalString = str.substr(0, MAX_LENGTH);
+    }
+
+    for(let key of finalString) {
+        console.log(key);
+    }
+};
+
+showVerticalMessage('марафон');

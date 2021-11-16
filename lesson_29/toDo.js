@@ -23,7 +23,7 @@ function changeStatus(task, status) {
         list[taskPosition].status = status;
     }
 
-};
+}
 
 
 function addTask(taskName) {
@@ -36,7 +36,7 @@ function addTask(taskName) {
     };
 
     list.push(newItem);
-};
+}
 
 
 function deleteTask(name) {
@@ -46,7 +46,7 @@ function deleteTask(name) {
         list.splice(deleteTask, 1);
     }
 
-};
+}
 
 
 function showList() {
@@ -61,7 +61,7 @@ function showList() {
         }
     }
 
-};
+}
 
 
 function showByStatus(status) {
@@ -75,7 +75,7 @@ function showByStatus(status) {
         }
     }
 
-};
+}
 
 
 function showByPriority(priority) {
@@ -89,7 +89,7 @@ function showByPriority(priority) {
         }       
     }
 
-};
+}
 
 //showList();
 

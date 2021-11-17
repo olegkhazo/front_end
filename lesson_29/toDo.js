@@ -39,8 +39,8 @@ function addTask(taskName) {
 }
 
 
-function deleteTask(name) {
-    let deleteTask = list.findIndex(item => item.name === name);
+function deleteTask(id) {
+    let deleteTask = list.findIndex(item => item.id === id);
 
     if (deleteTask !== -1) {
         list.splice(deleteTask, 1);

@@ -21,6 +21,15 @@ function getAverage(marks) {
     return Math.floor((marks.reduce((a, b) => (a + b)) / marks.length));
 }
 
-getAverage([2,2,2,2]);
-getAverage([1,2,3,4,5,]);
-getAverage([1,1,1,1,1,1,1,2])
+// getAverage([2,2,2,2]);
+// getAverage([1,2,3,4,5,]);
+// getAverage([1,1,1,1,1,1,1,2]);
+
+
+
+function reverse(str) {
+    let newStr
+    return str.split("").reverse().join("");
+}
+
+// reverse ("Oleh Oleh");

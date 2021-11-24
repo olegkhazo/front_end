@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <div>Пользователи:</div>
+        <ul>
+            <li>Джон</li>
+            <li>Пит</li>
+        </ul>
+        <script>
+            document.body.firstElementChild;
+            document.body.lastElementChild;
+            document.body.lastElementChild.lastElementChild;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@300;400&display=swap');
+
+*, *::after, *::before {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+p, h2 {
+    color: white;
+}
+
+.calcFrame {
+    width: 364px;
+    height: 582px;
+    background-color: #17171C;
+    margin: 20px auto;
+}
+
+.container {
+    width: 324px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    border-radius: 24px;
+    width: 69px;
+    height: 72px;
+    background-color: #2E2F38;
+    cursor: pointer;
+}
+
+.operand {
+    background-color: #4B5EFC;
+}
+
+.zero {
+    width: 238.33px;
+}
+
+.deleteAll, .deleteOne {
+    width: 111.17px;
+}
+
+.deleteAll {
+    background-color: #4E505F;
+}
+
+h2 {
+    font-size: 96px;
+    font-weight: 300;
+}
+
+.result {
+    display: flex;
+    justify-content: flex-end;
+}
+ 
+.btn p {
+    font-size: 32px;
+}
+
+.firstRow, .secondRow, .thirdRow, .fourthRow, .fifthRow {
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.deleteOne img {
+    width: 26.41px;
+    height: 18px;
+}

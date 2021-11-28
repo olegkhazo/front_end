@@ -8,9 +8,6 @@
     padding: 0;
     margin: 0;
     letter-spacing: 1px;
-}
-
-p, h2 {
     color: white;
 }
 
@@ -54,17 +51,16 @@ p, h2 {
     background-color: #4E505F;
 }
 
-h2 {
+.result {
+    height: 105px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     font-size: 96px;
     font-weight: 300;
 }
-
-.result {
-    display: flex;
-    justify-content: flex-end;
-}
  
-.btn p {
+.btn {
     font-size: 32px;
 }
 

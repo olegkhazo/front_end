@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="text">Text</div>
+    <button id="hide">Hide Text</button>
+    <br><br>
+    <button id="hideMySelf">Hide My Self</button>
+    <script>
+        let button = document.getElementById('hide');
+        let hideButton = document.getElementById('hideMySelf');
+
+        function hideText() {
+            // alert('ole');
+            let hidingElement = document.getElementById('text');
+            hidingElement.style.display = 'none';
+        }
+
+        function hideMySelf() {
+            hideButton.hidden = true;
+        }
+
+        button.addEventListener("click", hideText);
+
+        hideButton.addEventListener("click", hideMySelf);
+    </script>
+</body>
+</html>

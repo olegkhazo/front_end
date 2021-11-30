@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification</title>
+    <style>
+        .notification {
+            float: right;
+            width: 40px;
+            height: 20px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello Man</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facilis at,
+        dolores provident veritatis dolorem corporis dolorum
+        quis quisquam omnis blanditiis ex consectetur alias eos ut optio, aliquid tempora nemo.</p>
+</body>
+<script>
+
+    let noti = {
+        top: 0,
+        right: 10,
+        html: "hello!",
+        className: "welcome",
+    };
+
+    function showNotification(obj) {
+        let div = document.createElement('div');
+        div.classList.add('notification');
+
+        div.style.top = obj.top + 'px';
+        div.style.right = obj.right + 'px';
+
+        div.innerHTML = obj.html;
+
+        document.body.prepend(div);
+
+        setTimeout(() => notification.remove(), 1500);
+    };
+
+
+    // let i = 1;
+    // setInterval(() => {
+    //     showNotification({
+    //         top: 0,
+    //         right: 10,
+    //         html: "helloooooooooooooo!",
+    //     });
+    // }, 2000);
+
+    showNotification(noti);
+</script>
+
+</html>

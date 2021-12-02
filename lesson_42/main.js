@@ -1,6 +1,3 @@
-// К сожалению я не успел поставить некоторые проверки, на NaN и undefined,
-// также не успел отрефакторить как следует код. 
-
 let numbers = document.getElementsByClassName("num");
 let operands = document.getElementsByClassName("operand");
 let deleteOne = document.getElementById("deleteOne");

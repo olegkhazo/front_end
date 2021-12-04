@@ -60,7 +60,7 @@ span.little-btn {
     width: 21px;
     height: 20px;
     background-color: white;
-    background-image: url(img/plus-icon.png);
+    background-image: url(../img/plus-icon.png);
     border: none;
     position: absolute;
     margin: 24px -30px;
@@ -88,6 +88,7 @@ span.little-btn {
 }
 
 .description {
+    overflow: scroll;
     margin-top: 8px;
     display: flex;
     justify-content: space-between;
@@ -122,9 +123,9 @@ span.little-btn {
     position: absolute;
     width: 21px;
     height: 21px;
-    background-image: url(img/check.png);
+    background-image: url(../img/check.png);
 }
 
 .check__input:checked+.check__box {
-    background-image: url(img/ceck-active.png);
+    background-image: url(../img/ceck-active.png);
 }

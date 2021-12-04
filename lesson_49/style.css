@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@300;400&display=swap');
+
+*, *::after, *::before {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+form {
+    margin-bottom: -8px;
+}
+
+.toDoBlock {
+    min-height: 688px;
+    margin: 10vh auto;
+    width: 476px;
+    background-color: white;
+
+}
+
+.toDoBlock .container {
+    margin: 0 auto;
+    min-height: 658px;
+    width: 460px;
+    background-color: inherit;
+    padding: 15px 0 15px 0;
+}
+
+.addTask {
+    margin: 12px 0 8px 0;
+    width: 460px;
+    height: 45px;
+    border-radius: 6px;
+    border: 1px solid #989898;
+    padding: 0 12px 0 12px;
+}
+
+span.little-btn {
+    content: ' ';
+    width: 21px;
+    height: 20px;
+    background-color: white;
+    background-image: url(img/plus-icon.png);
+    border: none;
+    position: absolute;
+    margin: 24px -30px;
+    cursor: pointer;
+}
+
+.addTask::-webkit-input-placeholder {
+    color: #BBBBBB;
+    font-size: 18px;
+}
+
+.addTask::-moz-placeholder {
+    color: #BBBBBB;
+    font-size: 18px;
+}
+
+.addTask:-moz-placeholder {
+    color: #BBBBBB;
+    font-size: 18px;
+}
+
+.addTask:-ms-input-placeholder {
+    color: #BBBBBB;
+    font-size: 18px;
+}
+
+.description {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    width: 460px;
+    border-radius: 6px;
+    border: 1px solid #989898;
+    color: #202020;
+}
+
+.description img {
+    margin-top: 2px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.description p {
+    width: 370px;
+    margin-left: 12px;
+}
+
+.check__input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.check__box {
+    cursor: pointer;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background-image: url(img/check.png);
+}
+
+.check__input:checked+.check__box {
+    background-image: url(img/ceck-active.png);
+}

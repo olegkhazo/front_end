@@ -12,8 +12,8 @@
 <body>
     <div class="appWindow">
         <div class="search">
-            <form action="#">
-                <input type="text" placeholder="Aktobe">
+            <form action="#" class="form">
+                <input type="text" class="input" placeholder="Aktobe">
             </form>
         </div>
         <div class="infoBlock">
@@ -22,7 +22,8 @@
                 <div class="contLeftBlock">
 
                     <div class="data tabs__body">
-                        <div id="tab_01" class="tabs__block">
+
+                        <div class="tabs__block now active">
                             <div class="tempereture">
                                 <p>14<span>°</span></p>
                             </div>
@@ -39,7 +40,7 @@
                             </div>
                         </div>
 
-                        <div id="tab_02" class="tabs__block">
+                        <div class="tabs__block details">
                             <p>Aktobe</p>
                             <ul>
                                 <li>Temperature: 14°</li>
@@ -50,7 +51,7 @@
                             </ul>
                         </div>
 
-                        <div id="tab_03" class="tabs__block">
+                        <div class="tabs__block forecast">
                             <p class="cityName">Aktobe</p>
                             <div class="oneDayBlock">
                                 <div class="topInfo">
@@ -111,15 +112,9 @@
                 </div>
 
                 <div class="switchLeftBlock tabs__items">
-                    <div class="now">
-                        <a href="#tab_01" class="tabs__item"><span>Now</span></a>
-                    </div>
-                    <div class="details">
-                        <a href="#tab_02" class="tabs__item"><span>Details</span></a>
-                    </div>
-                    <div class="forecast">
-                        <a href="#tab_03" class="tabs__item"><span>Forecast</span></a>
-                    </div>
+                    <button class="tab__item active" data-show="now">Now</button>
+                    <button class="tab__item" data-show="details">Details</button>
+                    <button class="tab__item" data-show="forecast">Forecast</button>
                 </div>
 
             </div>
@@ -143,5 +138,6 @@
         </div>
     </div>
 </body>
+<script type="module" src="js/main.js"></script>
 
 </html>

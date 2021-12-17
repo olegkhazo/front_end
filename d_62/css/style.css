@@ -75,7 +75,7 @@ a {
 }
 
 .switchLeftBlock {
-    height: 45px;
+    height: 46px;
     width: 100%;
 }
 
@@ -130,6 +130,7 @@ a {
     padding: 40px;
 }
 
+
 .cityShape {
     display: flex;
     justify-content: space-between;
@@ -142,47 +143,13 @@ a {
     font-size: 24px;
 }
 
-.tabs__body {
-    position: relative;
-}
-
 .tabs__block {
     height: inherit;
     display: none;
 }
 
-.tabs__block:target {
+.tabs__block.active {
     display: block;
-}
-
-.tabs__block:before {
-    content: "";
-    height: 45px;
-    width: 100px;
-    position: absolute;
-    bottom: -46px;
-}
-
-.tabs__block:nth-child(1):before {
-    background-color: #000000;
-    left: 0;
-}
-
-.tabs__block:nth-child(2):before {
-    background-color: #000000;
-    left: 99px;
-}
-
-.tabs__block:nth-child(3):before {
-    background-color: #000000;
-    left: 199px;
-}
-
-.tabs__item span {
-    font-size: 18px;
-    position: relative;
-    z-index: 5;
-    color: gray;
 }
 
 .addedLocations {
@@ -237,6 +204,38 @@ a {
     font-size: 24px;
     margin-bottom: 7px;
 }
+
+.tabs__items button {
+    height: 45px;
+    flex: 0.34%;
+    background-color: #ffffff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.tabs__items button:not(:last-child) {
+   border-right: 1px solid #000000;
+}
+
+.tabs__items button:hover {
+    background-color: #f8f8f8ec;
+}
+
+button.active {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+button.active:hover {
+    background-color: #000000;
+}
+
+button:active {
+    background-color: #000000;
+    color: #ffffff;
+}
+
 
 .oneDayBlock {
     display: flex;

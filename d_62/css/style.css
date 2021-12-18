@@ -139,6 +139,10 @@ a {
     
 }
 
+.heart {
+    cursor: pointer;
+}
+
 .currentCity p {
     font-size: 24px;
 }
@@ -163,16 +167,26 @@ a {
 }
 
 .cities {
-    padding: 33px 0 0 18px;
+    padding: 33px 18px;
     height: 319px;
+    overflow: scroll;
 }
 
-.cities li {
+.cities .selected_city {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-size: 24px;
 }
 
-.cities li:not(:first-child) {
+.cities .selected_city:not(:first-child) {
     margin-top: 15px;
+}
+
+.cities .selected_city img {
+    width: 17px;
+    height: 16px;
+    cursor: pointer;
 }
 
 .tabs__block:nth-child(2) {

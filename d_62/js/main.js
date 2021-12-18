@@ -3,7 +3,7 @@ import { UI_ELEMENTS } from "./view.js";
 const SERVER_URL = 'http://api.openweathermap.org/data/2.5/weather';
 const API_KEY = 'f660a2fb1e4bad108d6160b7f58c555f';
 
-let CITY_COLLECTION = ["Amur", "Samara", "Bali", "Dane", "Kilo", "Nur-Sultan", "Boston", "Nebraska"];
+let CITY_COLLECTION = ["Amur", "Samara", "Bali", "Dane", "Kilo", "Nur-Sultan"];
 
 showSelectedCities(CITY_COLLECTION);
 addNewSeatyToCollection(CITY_COLLECTION);
@@ -36,11 +36,7 @@ function addNewSeatyToCollection(cities) {
             // this.src = './img/red_shape.png';
             return;
         }
-        CITY_COLLECTION.splice(CITY_COLLECTION.indexOf(UI_ELEMENTS.CURRENT_CITY.textContent), 1);
-        this.parentNode.remove();
-        showSelectedCities(cities);
-        // this.src = './img/shape.png';
-
+       
     });
 }
 

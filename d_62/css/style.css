@@ -64,12 +64,12 @@ a {
     border-bottom: 1px solid #000000;
 }
 
-.data .tempereture p {
+.data .temperature p {
     position: absolute;
     font-size: 70px;
 }
 
-.data .tempereture p span {
+.data .temperature p span {
     position: absolute;
     font-size: 60px;
 }
@@ -119,7 +119,7 @@ a {
     height: 342px;
 }
 
-.tempereture {
+.temperature {
     height: 100px;
     padding: 25px 0 0 23px;
 }

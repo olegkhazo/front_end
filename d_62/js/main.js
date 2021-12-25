@@ -3,9 +3,12 @@ import { getCurrentCity, getFavoriteCities, saveFavoriteCities } from "./storage
 
 
 const SERVER_URL = 'http://api.openweathermap.org/data/2.5/weather';
+const FORECAST_SERVER_URL = `http://api.openweathermap.org/data/2.5/forecast`;
+
+
 const API_KEY = 'f660a2fb1e4bad108d6160b7f58c555f';
 
-const CITY_COLLECTION = ["Kaluga"];
+const CITY_COLLECTION = [];
 const USER_CITY_COLLECTION = CITY_COLLECTION.concat(getFavoriteCities());
 
 
@@ -69,7 +72,7 @@ function removeCity(event) {
 
 function millisecondsToTime(duration) {
     const date = new Date(duration * 1000);
-    return date.getHours() + ":" + date.getMinutes();
+    return date.getHours() + ":" + date.getMinutes() + 0;
 }
 
 
@@ -89,9 +92,11 @@ function showWeatherInfo(event) {
 
     const url = `${SERVER_URL}?q=${cityName}&appid=${API_KEY}&units=metric`;
 
+
     fetch(url)
         .then(response => response.json())
         .then(response => new Promise((resolve, reject) => {
+
             if (response.cod === '404') throw new Error("No such city in the world!");
             const data = {
                 city: response.name,
@@ -101,28 +106,41 @@ function showWeatherInfo(event) {
                 clouds: response.weather[0].description,
                 sunrise: millisecondsToTime(response.sys.sunrise),
                 sunset: millisecondsToTime(response.sys.sunset),
-            }
+            };
 
-
-            UI_ELEMENTS.TEMPERATURE.childNodes[1].textContent = `${data.temp}°`;
-            UI_ELEMENTS.WEATHER_ICON.childNodes[1].setAttribute("src", `http://openweathermap.org/img/wn/${data.img}@2x.png`);
-            UI_ELEMENTS.CURRENT_CITY.childNodes[1].textContent = `${data.city}`;
-
-            UI_ELEMENTS.DETAILS.childNodes[1].textContent = `${data.city}`;
-            UI_ELEMENTS.DETAILS_TEMPERATURE.textContent = `Temperature: ${data.temp}°`;
-            UI_ELEMENTS.DETAILS_FEELS.textContent = `Feels like: ${data.feels}°`;
-            UI_ELEMENTS.DETAILS_CLOUDS.textContent = `Weather: ${data.clouds}`;
-            UI_ELEMENTS.DETAILS_SUNRISE.textContent = `Sunrise: ${data.sunrise}`;
-            UI_ELEMENTS.DETAILS_SUNSET.textContent = `Sunset: ${data.sunset}`;
+            UI_ELEMENTS.showNowInfo(data);
+            UI_ELEMENTS.showDetailsInfo(data);
+            showForecast(data.city);
 
         }))
         .catch(function (error) {
             const BROKEN_API = "API has problems, we are working on this problem!";
+
             if (error.message === "Failed to fetch") throw new Error(BROKEN_API);
 
             alert(error.message);
         })
         .catch(alert)
         .finally(UI_ELEMENTS.FORM.reset());
+}
+
+
+
+function showForecast(city) {
+    
+    const url = `${FORECAST_SERVER_URL}?q=${city}&cnt=3&appid=${API_KEY}&units=metric`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(response => new Promise((resolve, reject) => {
+            const data = {
+                city: response.city.name,                
+                data_collection: response.list,                
+            };
+
+            UI_ELEMENTS.showForecastInfo(data);
+
+        }))
+        .catch(alert);
 
 }

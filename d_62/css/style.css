@@ -277,3 +277,21 @@ button:active {
 .bottomInfo {
     height: 47px;
 }
+
+.fallout {
+    width: 65px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fallout p {
+    margin: 0px auto;
+}
+
+.fallout img {
+    width: 50px;
+    height: 53px;
+    margin: 0px auto;
+}

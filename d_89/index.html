@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="appWindow">
+        <div class="search">
+            <form action="#" class="form">
+                <input type="text" class="input" placeholder="Rio">
+            </form>
+        </div>
+        <div class="infoBlock">
+            <div class="leftBlock">
+
+                <div class="contLeftBlock">
+
+                    <div class="data tabs__body">
+
+                        <div class="tabs__block now active">
+                            <div class="temperature">
+                                <p></p>
+                            </div>
+                            <div class="precipitation">
+                                <img src="img/cloud.png" alt="icon">
+                            </div>
+                            <div class="cityShape">
+                                <div class="currentCity">
+                                    <p></p>
+                                </div>
+                                <div class="heart">
+                                    <img src="img/shape.png" alt="heart" class="heard_btn">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tabs__block details">
+                            <p></p>
+                            <ul>
+                                <li class="details_temperature"></li>
+                                <li class="details_feels"></li>
+                                <li class="details_clouds"></li>
+                                <li class="details_sunrise"></li>
+                                <li class="details_sunset"></li>
+                            </ul>
+                        </div>
+
+                        <div class="tabs__block forecast">
+                           
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="switchLeftBlock tabs__items">
+                    <button class="tab__item active" data-show="now">Now</button>
+                    <button class="tab__item" data-show="details">Details</button>
+                    <button class="tab__item" data-show="forecast">Forecast</button>
+                </div>
+
+            </div>
+
+            <div class="rightBlock">
+                <div class="addedLocations">
+                    <p>Added Locations:</p>
+                </div>
+
+                <div class="cities">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="js/main.js"></script>
+
+</html>

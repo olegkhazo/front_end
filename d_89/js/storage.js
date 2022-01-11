@@ -1,10 +1,4 @@
-import { UI_ELEMENTS } from "./view.js";
-
-// storage.saveFavoriteCities(favoriteCities);
-
-// const favoriteCities = storage.getFavoriteCities();
-
-// const currentCity = storage.getCurrentCity();
+// import { UI_ELEMENTS } from "./view.js";
 
 export function getCurrentCity(city) {
     localStorage.setItem("current", city);
@@ -17,13 +11,12 @@ export function saveFavoriteCities(city) {
 }
 
 export function getFavoriteCities() {
-    const favorite = [];
+    const favorite = new Set();
     for (let i = 0; i < localStorage.length; i++) {
         let key = localStorage.key(i);
         if (key === "current") continue;
-        favorite.push(`${localStorage.getItem(key)}`);
+        favorite.add(`${localStorage.getItem(key)}`);
     }
 
     return favorite;
-    // console.log(favorite);
 }

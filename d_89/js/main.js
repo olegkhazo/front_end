@@ -2,14 +2,18 @@ import { UI_ELEMENTS } from "./view.js";
 import { getCurrentCity, getFavoriteCities, saveFavoriteCities } from "./storage.js";
 
 
-const SERVER_URL = 'http://api.openweathermap.org/data/2.5/weather';
-const FORECAST_SERVER_URL = `http://api.openweathermap.org/data/2.5/forecast`;
+const SERVER_URL = 'https://api.openweathermap.org/data/2.5/weather';
+const FORECAST_SERVER_URL = `https://api.openweathermap.org/data/2.5/forecast`;
 
+//This key is individual, and you may need to toggle it toggle it.
+const API_KEY = '574999b8b47e40034c812362f8fa8bcc';
 
-const API_KEY = 'f660a2fb1e4bad108d6160b7f58c555f';
-
-const CITY_COLLECTION = [];
-const USER_CITY_COLLECTION = CITY_COLLECTION.concat(getFavoriteCities());
+const CITY_COLLECTION = new Set();
+const USER_CITY_COLLECTION = new Set();
+const GET_FAVOURITE_CITIES = getFavoriteCities();
+GET_FAVOURITE_CITIES.forEach((city, cities, GET_FAVOURITE_CITIES) => {
+    USER_CITY_COLLECTION.add(city);
+});
 
 
 getFavoriteCities();
@@ -17,22 +21,19 @@ if (localStorage.getItem("current") !== null) showWeatherInfo(localStorage.getIt
 
 
 showSelectedCities(USER_CITY_COLLECTION);
-addNewSeatyToCollection(USER_CITY_COLLECTION);
+addNewCityToCollection(USER_CITY_COLLECTION);
 
 
 UI_ELEMENTS.FORM.addEventListener("submit", showWeatherInfo);
 
 
-function addNewSeatyToCollection(cities) {
+function addNewCityToCollection(cities) {
     UI_ELEMENTS.HEART_BUTTON.addEventListener("click", function () {
-        if (!cities.includes(UI_ELEMENTS.CURRENT_CITY.textContent)) {
-            cities.push(UI_ELEMENTS.CURRENT_CITY.textContent);
-            saveFavoriteCities(UI_ELEMENTS.CURRENT_CITY.textContent);
+        cities.add(UI_ELEMENTS.CURRENT_CITY.textContent);
+        saveFavoriteCities(UI_ELEMENTS.CURRENT_CITY.textContent);
 
-            showSelectedCities(cities);
-            return;
-        }
-
+        showSelectedCities(cities);
+        return;
     });
 }
 
@@ -63,7 +64,7 @@ function showSelectedCities(cities) {
 
 function removeCity(event) {
     const removingCity = this.previousSibling.textContent;
-    USER_CITY_COLLECTION.splice(USER_CITY_COLLECTION.indexOf(removingCity), 1);
+    USER_CITY_COLLECTION.delete(removingCity);
     this.parentNode.remove();
     localStorage.removeItem(removingCity);
 
@@ -74,7 +75,6 @@ function millisecondsToTime(duration) {
     const date = new Date(duration * 1000);
     return date.getHours() + ":" + date.getMinutes() + 0;
 }
-
 
 async function showWeatherInfo(event) {
     let cityName = "";
@@ -112,7 +112,7 @@ async function showWeatherInfo(event) {
     showForecast(data.city);
 
     UI_ELEMENTS.FORM.reset();
-} 
+}
 
 
 function showForecast(city) {

@@ -1,8 +1,6 @@
-20178
-60C:\code\frontEndMarafon\d_106\node_modules\timers-browserify132878578556836679 1
-89C:\code\frontEndMarafon\d_106\node_modules\date-fns\esm\differenceInBusinessDays\index.js121436361000000000 0
-33C:\code\frontEndMarafon\d_106\css132878360287574207 1
-49C:\code\frontEndMarafon\d_106\node_modules\events132878578597967062 1
+20179
+40C:\code\frontEndMarafon\d_106\.gitignore132879187281244104 0
+75C:\code\frontEndMarafon\d_106\node_modules\highlight.js\styles\pojoaque.jpg121436361000000000 0
 91C:\code\frontEndMarafon\d_106\node_modules\core-js\modules\esnext.object.iterate-entries.js121436361000000000 0
 64C:\code\frontEndMarafon\d_106\node_modules\stream-http\README.md121436361000000000 0
 62C:\code\frontEndMarafon\d_106\node_modules\isarray\.travis.yml130942154450000000 0
@@ -30,9 +28,13 @@
 77C:\code\frontEndMarafon\d_106\node_modules\date-fns\locale\en-NZ\package.json121436361000000000 0
 89C:\code\frontEndMarafon\d_106\node_modules\public-encrypt\node_modules\bn.js\package.json132878578570272008 0
 88C:\code\frontEndMarafon\d_106\node_modules\date-fns\esm\fp\isLastDayOfMonth\package.json121436361000000000 0
-34C:\code\frontEndMarafon\d_106\dist132879167894598205 1
+34C:\code\frontEndMarafon\d_106\dist132879192035541005 1
 77C:\code\frontEndMarafon\d_106\node_modules\date-fns\locale\gl\_lib\formatLong132878579617601308 1
 57C:\code\frontEndMarafon\d_106\node_modules\sha.js\LICENSE132878577876911617 0
+60C:\code\frontEndMarafon\d_106\node_modules\timers-browserify132878578556836679 1
+89C:\code\frontEndMarafon\d_106\node_modules\date-fns\esm\differenceInBusinessDays\index.js121436361000000000 0
+33C:\code\frontEndMarafon\d_106\css132878360287574207 1
+49C:\code\frontEndMarafon\d_106\node_modules\events132878578597967062 1
 76C:\code\frontEndMarafon\d_106\node_modules\date-fns\fp\nextSaturday\index.js121436361000000000 0
 74C:\code\frontEndMarafon\d_106\node_modules\fast-glob\out\providers\sync.js121436361000000000 0
 89C:\code\frontEndMarafon\d_106\node_modules\caniuse-lite\data\features\array-find-index.js121436361000000000 0
@@ -49,19 +51,6 @@
 67C:\code\frontEndMarafon\d_106\node_modules\postcss-svgo\LICENSE-MIT121436361000000000 0
 80C:\code\frontEndMarafon\d_106\node_modules\date-fns\locale\ar-EG\_lib\formatLong132878579567859737 1
 101C:\code\frontEndMarafon\d_106\node_modules\terser\node_modules\source-map\lib\source-map-generator.js131709648810000000 0
-81C:\code\frontEndMarafon\d_106\node_modules\date-fns\locale\km\_lib\formatDistance132878579642552846 1
-58C:\code\frontEndMarafon\d_106\node_modules\shebang-command132878578563701977 1
-66C:\code\frontEndMarafon\d_106\node_modules\date-fns\esm\setSeconds132878580158123252 1
-73C:\code\frontEndMarafon\d_106\node_modules\browserify-cipher\package.json132878578551648225 0
-68C:\code\frontEndMarafon\d_106\node_modules\unbox-primitive\.eslintrc121436361000000000 0
-83C:\code\frontEndMarafon\d_106\node_modules\utility-types\dist\functional-helpers.js121436361000000000 0
-88C:\code\frontEndMarafon\d_106\node_modules\date-fns\fp\setWeekYearWithOptions\index.d.ts121436361000000000 0
-61C:\code\frontEndMarafon\d_106\node_modules\pbkdf2\lib\sync.js121436361000000000 0
-77C:\code\frontEndMarafon\d_106\node_modules\date-fns\esm\fp\endOfHour\index.js121436361000000000 0
-60C:\code\frontEndMarafon\d_106\node_modules\which-typed-array132878578545507410 1
-69C:\code\frontEndMarafon\d_106\node_modules\date-fns\differenceInYears132878580030587375 1
-77C:\code\frontEndMarafon\d_106\node_modules\date-fns\esm\setQuarter\index.d.ts121436361000000000 0
-61C:\code\frontEndMarafon\d_106\node_modules\console-browserify132878578603064863 1
 100C:\code\frontEndMarafon\d_106\node_modules\htmlnano\docs\versioned_docs\version-2.0.0\050-modules.md121436361000000000 0
 67C:\code\frontEndMarafon\d_106\node_modules\@types\node\cluster.d.ts132877890910000000 0
 76C:\code\frontEndMarafon\d_106\node_modules\process-nextick-args\package.json132878578569531417 0
@@ -217,7 +206,7 @@
 90C:\code\frontEndMarafon\d_106\node_modules\date-fns\fp\isSameWeekWithOptions\index.js.flow121436361000000000 0
 76C:\code\frontEndMarafon\d_106\node_modules\date-fns\fp\compareAsc\index.d.ts121436361000000000 0
 82C:\code\frontEndMarafon\d_106\node_modules\date-fns\millisecondsToHours\index.d.ts121436361000000000 0
-40C:\code\frontEndMarafon\d_106\js\view.js132878625323246180 0
+40C:\code\frontEndMarafon\d_106\js\view.js132879190082512107 0
 56C:\code\frontEndMarafon\d_106\node_modules\nan\nan_new.h131637928500000000 0
 72C:\code\frontEndMarafon\d_106\node_modules\pako\dist\pako_deflate.min.js121436361000000000 0
 72C:\code\frontEndMarafon\d_106\node_modules\date-fns\locale\ht\_lib\match132878579626437084 1
@@ -614,6 +603,19 @@
 56C:\code\frontEndMarafon\d_106\node_modules\color-convert132878578603455220 1
 69C:\code\frontEndMarafon\d_106\node_modules\date-fns\getISOWeeksInYear132878580235451772 1
 52C:\code\frontEndMarafon\d_106\node_modules\commander132878578603194932 1
+81C:\code\frontEndMarafon\d_106\node_modules\date-fns\locale\km\_lib\formatDistance132878579642552846 1
+58C:\code\frontEndMarafon\d_106\node_modules\shebang-command132878578563701977 1
+66C:\code\frontEndMarafon\d_106\node_modules\date-fns\esm\setSeconds132878580158123252 1
+73C:\code\frontEndMarafon\d_106\node_modules\browserify-cipher\package.json132878578551648225 0
+68C:\code\frontEndMarafon\d_106\node_modules\unbox-primitive\.eslintrc121436361000000000 0
+83C:\code\frontEndMarafon\d_106\node_modules\utility-types\dist\functional-helpers.js121436361000000000 0
+88C:\code\frontEndMarafon\d_106\node_modules\date-fns\fp\setWeekYearWithOptions\index.d.ts121436361000000000 0
+61C:\code\frontEndMarafon\d_106\node_modules\pbkdf2\lib\sync.js121436361000000000 0
+77C:\code\frontEndMarafon\d_106\node_modules\date-fns\esm\fp\endOfHour\index.js121436361000000000 0
+60C:\code\frontEndMarafon\d_106\node_modules\which-typed-array132878578545507410 1
+69C:\code\frontEndMarafon\d_106\node_modules\date-fns\differenceInYears132878580030587375 1
+77C:\code\frontEndMarafon\d_106\node_modules\date-fns\esm\setQuarter\index.d.ts121436361000000000 0
+61C:\code\frontEndMarafon\d_106\node_modules\console-browserify132878578603064863 1
 46C:\code\frontEndMarafon\d_106\node_modules\has132878578596300897 1
 52C:\code\frontEndMarafon\d_106\node_modules\which\bin132878577736671309 1
 94C:\code\frontEndMarafon\d_106\node_modules\postcss-ordered-values\dist\lib\vendorUnprefixed.js121436361000000000 0
@@ -893,7 +895,7 @@
 92C:\code\frontEndMarafon\d_106\node_modules\date-fns\fp\startOfWeekYearWithOptions\index.d.ts121436361000000000 0
 70C:\code\frontEndMarafon\d_106\node_modules\date-fns\formatISO\index.js121436361000000000 0
 82C:\code\frontEndMarafon\d_106\node_modules\date-fns\millisecondsToMinutes\index.js121436361000000000 0
-87C:\code\frontEndMarafon\d_106\node_modules\stream-http\node_modules\readable-stream\lib132878577741184332 1
+87C:\code\frontEndMarafon\d_106\node_modules\stream-http\node_modules\readable-stream\lib132878577746182715 1
 74C:\code\frontEndMarafon\d_106\node_modules\core-js\modules\es.math.sinh.js121436361000000000 0
 63C:\code\frontEndMarafon\d_106\node_modules\electron-to-chromium132878578602044073 1
 71C:\code\frontEndMarafon\d_106\node_modules\date-fns\esm\format\index.js121436361000000000 0
@@ -1383,15 +1385,15 @@
 87C:\code\frontEndMarafon\d_106\node_modules\jake\node_modules\color-convert\CHANGELOG.md121436361000000000 0
 70C:\code\frontEndMarafon\d_106\node_modules\date-fns\locale\is\index.js121436361000000000 0
 60C:\code\frontEndMarafon\d_106\node_modules\is-boolean-object132878578594769772 1
+57C:\code\frontEndMarafon\d_106\node_modules\ordered-binary132878578578257940 1
+77C:\code\frontEndMarafon\d_106\node_modules\domain-browser\.github\FUNDING.yml121436361000000000 0
+87C:\code\frontEndMarafon\d_106\node_modules\postcss-modules-extract-imports\src\index.js121436361000000000 0
+73C:\code\frontEndMarafon\d_106\node_modules\which-boxed-primitive\index.js121436361000000000 0
 68C:\code\frontEndMarafon\d_106\node_modules\object-keys\.editorconfig121436361000000000 0
 76C:\code\frontEndMarafon\d_106\node_modules\date-fns\esm\locale\bg\index.d.ts121436361000000000 0
 81C:\code\frontEndMarafon\d_106\node_modules\core-js\modules\es.typed-array.sort.js121436361000000000 0
 104C:\code\frontEndMarafon\d_106\node_modules\date-fns\esm\fp\formatDistanceStrictWithOptions\index.js.flow121436361000000000 0
 54C:\code\frontEndMarafon\d_106\node_modules\is-callable132878578594759777 1
-77C:\code\frontEndMarafon\d_106\node_modules\domain-browser\.github\FUNDING.yml121436361000000000 0
-87C:\code\frontEndMarafon\d_106\node_modules\postcss-modules-extract-imports\src\index.js121436361000000000 0
-73C:\code\frontEndMarafon\d_106\node_modules\which-boxed-primitive\index.js121436361000000000 0
-57C:\code\frontEndMarafon\d_106\node_modules\ordered-binary132878578578257940 1
 84C:\code\frontEndMarafon\d_106\node_modules\core-js\proposals\map-update-or-insert.js121436361000000000 0
 73C:\code\frontEndMarafon\d_106\node_modules\which-typed-array\CHANGELOG.md121436361000000000 0
 62C:\code\frontEndMarafon\d_106\node_modules\mkdirp\package.json132878578579268655 0
@@ -2650,7 +2652,6 @@
 70C:\code\frontEndMarafon\d_106\node_modules\node-addon-api\package.json132878578575325784 0
 61C:\code\frontEndMarafon\d_106\node_modules\wrap-ansi\index.js121436361000000000 0
 80C:\code\frontEndMarafon\d_106\node_modules\date-fns\fp\fromUnixTime\package.json121436361000000000 0
-113C:\code\frontEndMarafon\d_106\node_modules\stream-http\node_modules\readable-stream\lib\internal\streams\state.js121436361000000000 0
 81C:\code\frontEndMarafon\d_106\node_modules\postcss-unique-selectors\dist\index.js121436361000000000 0
 81C:\code\frontEndMarafon\d_106\node_modules\highlight.js\scss\solarized-light.scss121436361000000000 0
 63C:\code\frontEndMarafon\d_106\node_modules\safer-buffer\LICENSE121436361000000000 0
@@ -3955,7 +3956,7 @@
 90C:\code\frontEndMarafon\d_106\node_modules\date-fns\esm\locale\ja-Hira\_lib\formatDistance132878579388958482 1
 65C:\code\frontEndMarafon\d_106\node_modules\node-forge\lib\mgf1.js121436361000000000 0
 70C:\code\frontEndMarafon\d_106\node_modules\source-map-js\lib\base64.js121436361000000000 0
-104C:\code\frontEndMarafon\d_106\node_modules\stream-http\node_modules\readable-stream\lib\internal\streams132878577807048273 1
+104C:\code\frontEndMarafon\d_106\node_modules\stream-http\node_modules\readable-stream\lib\internal\streams132878577809289757 1
 121C:\code\frontEndMarafon\d_106\node_modules\stream-http\node_modules\readable-stream\lib\internal\streams\end-of-stream.js121436361000000000 0
 74C:\code\frontEndMarafon\d_106\node_modules\date-fns\locale\eu\package.json121436361000000000 0
 80C:\code\frontEndMarafon\d_106\node_modules\es-abstract\2020\SetFunctionLength.js121436361000000000 0
@@ -3963,6 +3964,7 @@
 74C:\code\frontEndMarafon\d_106\node_modules\core-js\es\instance\for-each.js121436361000000000 0
 85C:\code\frontEndMarafon\d_106\node_modules\date-fns\esm\fp\subMilliseconds\index.d.ts121436361000000000 0
 116C:\code\frontEndMarafon\d_106\node_modules\stream-http\node_modules\readable-stream\lib\internal\streams\pipeline.js121436361000000000 0
+113C:\code\frontEndMarafon\d_106\node_modules\stream-http\node_modules\readable-stream\lib\internal\streams\state.js121436361000000000 0
 80C:\code\frontEndMarafon\d_106\node_modules\date-fns\locale\en-GB\_lib\formatLong132878579597756563 1
 75C:\code\frontEndMarafon\d_106\node_modules\date-fns\locale\hi\_lib\localize132878579622788040 1
 69C:\code\frontEndMarafon\d_106\node_modules\jake\lib\task\file_task.js132361568290000000 0
@@ -4045,7 +4047,7 @@
 80C:\code\frontEndMarafon\d_106\node_modules\stream-browserify\.github\FUNDING.yml121436361000000000 0
 67C:\code\frontEndMarafon\d_106\node_modules\entities\lib\decode.d.ts121436361000000000 0
 77C:\code\frontEndMarafon\d_106\node_modules\date-fns\esm\locale\pt-BR\index.js121436361000000000 0
-93C:\code\frontEndMarafon\d_106\node_modules\stream-browserify\node_modules\readable-stream\lib132878577743135634 1
+93C:\code\frontEndMarafon\d_106\node_modules\stream-browserify\node_modules\readable-stream\lib132878577753347450 1
 74C:\code\frontEndMarafon\d_106\node_modules\date-fns\esm\endOfYear\index.js121436361000000000 0
 72C:\code\frontEndMarafon\d_106\node_modules\lmdb\dependencies\lz4\LICENSE121436361000000000 0
 72C:\code\frontEndMarafon\d_106\node_modules\lodash.camelcase\package.json132878578586328607 0
@@ -6912,7 +6914,7 @@
 86C:\code\frontEndMarafon\d_106\node_modules\highlight.js\lib\languages\ruleslanguage.js121436361000000000 0
 83C:\code\frontEndMarafon\d_106\node_modules\lmdb\dependencies\lmdb-data-v1\libraries132878577724618264 1
 88C:\code\frontEndMarafon\d_106\node_modules\core-js\internals\is-array-iterator-method.js121436361000000000 0
-91C:\code\frontEndMarafon\d_106\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb132878578132175386 1
+91C:\code\frontEndMarafon\d_106\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb132878578132535615 1
 76C:\code\frontEndMarafon\d_106\node_modules\highlight.js\lib\languages\dns.js121436361000000000 0
 74C:\code\frontEndMarafon\d_106\node_modules\core-js\stable\function\virtual132878578307773691 1
 99C:\code\frontEndMarafon\d_106\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\LICENSE121436361000000000 0
@@ -7911,7 +7913,6 @@
 80C:\code\frontEndMarafon\d_106\node_modules\highlight.js\styles\paraiso-light.css121436361000000000 0
 89C:\code\frontEndMarafon\d_106\node_modules\date-fns\esm\fp\previousWednesday\package.json121436361000000000 0
 87C:\code\frontEndMarafon\d_106\node_modules\es-abstract\2017\StrictEqualityComparison.js121436361000000000 0
-75C:\code\frontEndMarafon\d_106\node_modules\highlight.js\styles\pojoaque.jpg121436361000000000 0
 76C:\code\frontEndMarafon\d_106\node_modules\date-fns\endOfTomorrow\index.d.ts121436361000000000 0
 81C:\code\frontEndMarafon\d_106\node_modules\highlight.js\styles\qtcreator_dark.css121436361000000000 0
 90C:\code\frontEndMarafon\d_106\node_modules\date-fns\locale\eu\_lib\formatRelative\index.js121436361000000000 0
@@ -8254,8 +8255,8 @@
 63C:\code\frontEndMarafon\d_106\node_modules\hash.js\package.json132878578585713205 0
 68C:\code\frontEndMarafon\d_106\node_modules\hash.js\test\hash-test.js121436361000000000 0
 74C:\code\frontEndMarafon\d_106\node_modules\date-fns\esm\fp\quartersToYears132878580098336363 1
-68C:\code\frontEndMarafon\d_106\node_modules\date-fns\fp\formatRFC3339132878580187846110 1
 59C:\code\frontEndMarafon\d_106\node_modules\hash.js\lib\hash132878577972235723 1
+68C:\code\frontEndMarafon\d_106\node_modules\date-fns\fp\formatRFC3339132878580187846110 1
 64C:\code\frontEndMarafon\d_106\node_modules\des.js\lib\des\des.js121436361000000000 0
 64C:\code\frontEndMarafon\d_106\node_modules\hash.js\lib\hash.d.ts121436361000000000 0
 75C:\code\frontEndMarafon\d_106\node_modules\core-js\actual\array\group-by.js121436361000000000 0
@@ -10852,7 +10853,7 @@
 90C:\code\frontEndMarafon\d_106\node_modules\date-fns\locale\ka\_lib\formatDistance\index.js121436361000000000 0
 81C:\code\frontEndMarafon\d_106\node_modules\date-fns\startOfTomorrow\index.js.flow121436361000000000 0
 72C:\code\frontEndMarafon\d_106\node_modules\date-fns\fp\endOfDay\index.js121436361000000000 0
-94C:\code\frontEndMarafon\d_106\node_modules\@parcel\core\test\fixtures\config-extends-not-found132878577724212922 1
+94C:\code\frontEndMarafon\d_106\node_modules\@parcel\core\test\fixtures\config-extends-not-found132878577725814076 1
 73C:\code\frontEndMarafon\d_106\node_modules\date-fns\startOfToday\index.js121436361000000000 0
 89C:\code\frontEndMarafon\d_106\node_modules\css-select\lib\pseudo-selectors\index.d.ts.map121436361000000000 0
 77C:\code\frontEndMarafon\d_106\node_modules\date-fns\startOfToday\package.json121436361000000000 0
@@ -18647,7 +18648,7 @@
 105C:\code\frontEndMarafon\d_106\node_modules\browserify-sign\node_modules\readable-stream\errors-browser.js121436361000000000 0
 97C:\code\frontEndMarafon\d_106\node_modules\browserify-sign\node_modules\readable-stream\errors.js121436361000000000 0
 101C:\code\frontEndMarafon\d_106\node_modules\browserify-sign\node_modules\readable-stream\GOVERNANCE.md121436361000000000 0
-91C:\code\frontEndMarafon\d_106\node_modules\browserify-sign\node_modules\readable-stream\lib132878577795770742 1
+91C:\code\frontEndMarafon\d_106\node_modules\browserify-sign\node_modules\readable-stream\lib132878577800208701 1
 95C:\code\frontEndMarafon\d_106\node_modules\browserify-sign\node_modules\readable-stream\LICENSE121436361000000000 0
 107C:\code\frontEndMarafon\d_106\node_modules\browserify-sign\node_modules\readable-stream\readable-browser.js121436361000000000 0
 99C:\code\frontEndMarafon\d_106\node_modules\browserify-sign\node_modules\readable-stream\readable.js121436361000000000 0
@@ -19387,7 +19388,7 @@
 102C:\code\frontEndMarafon\d_106\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\@scope132878577724343020 1
 103C:\code\frontEndMarafon\d_106\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\aliased132878577964310429 1
 108C:\code\frontEndMarafon\d_106\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\aliased-file132878577963304761 1
-109C:\code\frontEndMarafon\d_106\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-alias132878577898315893 1
+109C:\code\frontEndMarafon\d_106\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-alias132878577972035583 1
 119C:\code\frontEndMarafon\d_106\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-browser-exclude132878577975062600 1
 112C:\code\frontEndMarafon\d_106\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-fallback132878577978489890 1
 108C:\code\frontEndMarafon\d_106\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-main132878577983218042 1
@@ -20173,7 +20174,7 @@
 53C:\code\frontEndMarafon\d_106\node_modules\.bin\which132878578616153915 0
 57C:\code\frontEndMarafon\d_106\node_modules\.bin\which.cmd132878578616053837 0
 57C:\code\frontEndMarafon\d_106\node_modules\.bin\which.ps1132878578616053837 0
-41C:\code\frontEndMarafon\d_106\js\index.js132879164443833644 0
-52C:\code\frontEndMarafon\d_106\dist\index.5d9dacde.js132879164374429317 0
-56C:\code\frontEndMarafon\d_106\dist\index.5d9dacde.js.map132879164374809554 0
+41C:\code\frontEndMarafon\d_106\js\index.js132879192029204498 0
+52C:\code\frontEndMarafon\d_106\dist\index.5d9dacde.js132879192034490270 0
+56C:\code\frontEndMarafon\d_106\dist\index.5d9dacde.js.map132879192035380938 0
 43C:\code\frontEndMarafon\d_106\css\index.css132879167889659913 0

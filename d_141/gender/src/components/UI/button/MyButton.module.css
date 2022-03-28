@@ -1,0 +1,13 @@
+.myButton {
+    background-color: blue;
+    padding: 10px 30px;
+    font-weight: normal;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+

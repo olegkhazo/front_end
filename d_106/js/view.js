@@ -8,5 +8,8 @@ export function creatingHandlers(element, action, func) {
     element.addEventListener(action, func);
 }
 
+export function readebleResult(dif) {
+    UI_ELEMENTS.RESULT.innerHTML = "Years: " + dif.years + "<br/>" + "days: " + dif.days + "<br/>" + "hours: " + dif.hours;
+}
 
 

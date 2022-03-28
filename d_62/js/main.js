@@ -76,13 +76,12 @@ function millisecondsToTime(duration) {
 }
 
 
-function showWeatherInfo(event) {
+async function showWeatherInfo(event) {
     let cityName = "";
 
     if (event.type !== "submit" && event.type !== "click") {
         cityName = event;
-    }
-    else if (event.type === "submit") {
+    } else if (event.type === "submit") {
         cityName = UI_ELEMENTS.INPUT.value;
     } else {
         cityName = this.textContent;
@@ -92,50 +91,52 @@ function showWeatherInfo(event) {
 
     const url = `${SERVER_URL}?q=${cityName}&appid=${API_KEY}&units=metric`;
 
+    let response = await fetch(url);
 
-    fetch(url)
-        .then(response => response.json())
-        .then(response => new Promise((resolve, reject) => {
+    if (response.status === '404') throw new Error("No such city in the world!");
 
-            if (response.cod === '404') throw new Error("No such city in the world!");
-            const data = {
-                city: response.name,
-                img: response.weather[0].icon,
-                temp: Math.round(response.main.temp),
-                feels: Math.round(response.main.feels_like),
-                clouds: response.weather[0].description,
-                sunrise: millisecondsToTime(response.sys.sunrise),
-                sunset: millisecondsToTime(response.sys.sunset),
-            };
+    let json = await response.json();
 
-            UI_ELEMENTS.showNowInfo(data);
-            UI_ELEMENTS.showDetailsInfo(data);
-            showForecast(data.city);
+    const data = {
+        city: json.name,
+        img: json.weather[0].icon,
+        temp: Math.round(json.main.temp),
+        feels: Math.round(json.main.feels_like),
+        clouds: json.weather[0].description,
+        sunrise: millisecondsToTime(json.sys.sunrise),
+        sunset: millisecondsToTime(json.sys.sunset),
+    };
 
-        }))
-        .catch(function (error) {
-            const BROKEN_API = "API has problems, we are working on this problem!";
+    UI_ELEMENTS.showNowInfo(data);
+    UI_ELEMENTS.showDetailsInfo(data);
+    showForecast(data.city);
 
-            if (error.message === "Failed to fetch") throw new Error(BROKEN_API);
+    UI_ELEMENTS.FORM.reset();
+} 
 
-            alert(error.message);
-        })
-        .catch(alert)
-        .finally(UI_ELEMENTS.FORM.reset());
-}
+//         .catch(function (error) {
+//             const BROKEN_API = "API has problems, we are working on this problem!";
+
+//             if (error.message === "Failed to fetch") throw new Error(BROKEN_API);
+
+//             alert(error.message);
+//         })
+//         .catch(alert)
+//         .finally(UI_ELEMENTS.FORM.reset());
+// }
 
 
 
 function showForecast(city) {
-    
+
     const url = `${FORECAST_SERVER_URL}?q=${city}&cnt=3&appid=${API_KEY}&units=metric`;
 
     fetch(url)
         .then(response => response.json())
         .then(response => new Promise((resolve, reject) => {
             const data = {
-                city: response.city.name,                
-                data_collection: response.list,                
+                city: response.city.name,
+                data_collection: response.list,
             };
 
             UI_ELEMENTS.showForecastInfo(data);
